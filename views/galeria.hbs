@@ -1,0 +1,37 @@
+<div class="galeria-container">
+   <div class="galeria__item">
+     <img src="images/arquitectura01.jpg" class="galeria__img" width="100">
+      <h3>
+        <a href="javascript:void(0)" data-toogle="modal" data-targert="modal" class="galeria__titulo">TWINS</a>
+      </h3>
+     </div>
+</div>
+
+<div class="galeria-container">
+   <div class="galeria__item">
+     <img src="/images/14.jpg" class="galeria__img" width="100">
+      <h3>
+        <a class="galeria__titulo">CUBE</a>
+      </h3>
+     </div>
+</div>
+
+<div class="galeria-container">
+   <div class="galeria__item">
+     <img src="/images/12.jpg" class="galeria__img" width="100">
+      <h3>
+        <a class="galeria__titulo">PERSON</a>
+      </h3>
+     </div>
+</div>
+
+{{#each novedades}}
+<div class="galeria-container">
+   <div class="galeria__item">
+     <img src="{{imagen}}" class="galeria__img" width="100">
+      <h3>
+        <a href="javascript:void(0)" data-toogle="modal" data-targert="modal{{id}}" class="galeria__titulo">{{titulo}}</a>
+      </h3>
+     </div>
+</div>
+{{/each}}
